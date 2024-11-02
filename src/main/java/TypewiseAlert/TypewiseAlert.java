@@ -11,7 +11,6 @@ public class TypewiseAlert {
         strategyMap.put(CoolingType.HI_ACTIVE_COOLING, new HighActiveCoolingStrategy());
         strategyMap.put(CoolingType.MED_ACTIVE_COOLING, new MediumActiveCoolingStrategy());
     }
-
     public BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC) {
         return strategyMap.get(coolingType).classifyTemperatureBreach(temperatureInC);
     }

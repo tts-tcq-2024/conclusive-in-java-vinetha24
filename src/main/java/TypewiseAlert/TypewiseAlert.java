@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TypewiseAlert {
-    private final Map<CoolingType, TemperatureClassificationStrategy> strategyMap = new HashMap<>();
+    private final Map<CoolingType, ITemperatureClassificationStrategy> strategyMap = new HashMap<>();
 
     public TypewiseAlert() {
         strategyMap.put(CoolingType.PASSIVE_COOLING, new PassiveCoolingStrategy());

@@ -1,4 +1,4 @@
 
-public interface TemperatureClassificationStrategy {
+public interface ITemperatureClassificationStrategy {
         BreachType classifyTemperatureBreach(double temperatureInC);
     }

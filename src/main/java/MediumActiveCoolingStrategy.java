@@ -1,3 +1,4 @@
+package TypewiseAlert
 public class MediumActiveCoolingStrategy implements TemperatureClassificationStrategy {
     @Override
     public BreachType classifyTemperatureBreach(double temperatureInC) {
